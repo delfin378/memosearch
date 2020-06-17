@@ -1,0 +1,16 @@
+.header
+  .header__username
+    上林
+    .header__logout
+      %i.fa.fa-cog
+  .header__mainform
+    .search_bar
+      %input.textform{name: "keyword", type: "text", value: ""}
+      %i.fas.fa-search.search_icon
+    .header__mypage
+      - if user_signed_in?
+        = link_to "ログアウト", destroy_user_session_path, method: :delete
+      - else
+        = link_to "ログイン", new_user_session_path, method: :get
+      %i.fa.fa-user
+        
