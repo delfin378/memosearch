@@ -1,4 +1,6 @@
 @import "reset";
+@import "config/colors";
+
 
 //トップページ
 @import "modules/messages";
@@ -14,3 +16,8 @@
 //アイコン
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+//フラッシュMSG
+@import "modules/flash";
+
+

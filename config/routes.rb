@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root to: 'messages#index'
-  get 'users/index'
+  resources :users, only: [:edit, :update]
   devise_for :users, controllers: {
     sessions: 'users/sessions'
   }
