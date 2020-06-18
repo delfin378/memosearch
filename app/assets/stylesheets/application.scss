@@ -1,0 +1,16 @@
+@import "reset";
+
+//トップページ
+@import "modules/messages";
+
+
+@import "modules/user";
+
+//ヘッダー
+@import "modules/header";
+//左側
+@import "modules/side_bar";
+
+//アイコン
+@import "font-awesome-sprockets";
+@import "font-awesome";

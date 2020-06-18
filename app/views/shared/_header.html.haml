@@ -1,0 +1,17 @@
+.header
+  .header__username
+    = current_user.name
+    .header__logout
+      %i.fa.fa-cog
+  .header__mainform
+    .search_bar
+      %input.textform{name: "keyword", type: "text", value: ""}
+      %i.fas.fa-search.search_icon
+    .header__mypage
+      - if user_signed_in?
+        = link_to destroy_user_session_path, method: :delete do
+          %i.fa.fa-user
+      - else
+        = link_to new_user_session_path, method: :get do
+          %i.fa.fa-user
+        

@@ -1,0 +1,25 @@
+.groups{
+  height: calc(100vh - 60px);
+  background-color: #2f3e51;
+  padding: 20px 20px 0;
+  overflow: scroll;
+  width: 15%;
+  color: white;
+  .group {
+    box-sizing: border-box;
+    padding: 20px 0 40px;
+    a:link { color: white; }
+    a:visited { color: white; }
+    a {text-decoration: none;}
+    overflow: scroll;
+    &__group-name {
+      font-size: 15px;
+      margin-bottom: 5px;
+      color: white;
+      &__latest-message {
+        font-size: 11px;
+        color: white;
+      }
+    }
+  }
+}
