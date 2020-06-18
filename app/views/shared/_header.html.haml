@@ -1,6 +1,6 @@
 .header
   .header__username
-    上林
+    = current_user.name
     .header__logout
       %i.fa.fa-cog
   .header__mainform
@@ -9,8 +9,9 @@
       %i.fas.fa-search.search_icon
     .header__mypage
       - if user_signed_in?
-        = link_to "ログアウト", destroy_user_session_path, method: :delete
+        = link_to destroy_user_session_path, method: :delete do
+          %i.fa.fa-user
       - else
-        = link_to "ログイン", new_user_session_path, method: :get
-      %i.fa.fa-user
+        = link_to new_user_session_path, method: :get do
+          %i.fa.fa-user
         
