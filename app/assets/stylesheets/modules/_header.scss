@@ -1,14 +1,23 @@
 .header{
   height: 60px;
   background-color: #253141;
-  color: white;
   z-index: 3;
+  position: fixed;
+  width: 100%;
   &__username{
     display: inline-block;
     width: 15%;
     height: 60px;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-left: 20px;
+    font-size: 20px;
+    color: white;
+    :link { 
+      color:white;
+    }
+    :visited {
+      color: white;
+      }
   }
   &__logout{
     display: inline-block;
@@ -46,15 +55,30 @@
         margin-right: 10px;
         color: black;
     }
-  }
-      
-  .header__mypage{
+  }   
+  .header__contents{
     width: 8%;
     height: 30px;
-    margin-top: 18px;
-    margin-left: auto;
-    .fa-user{
+    margin: 16px 0 0 auto;
+    width: 200px;
+    :link { 
+      color:white;
+    }
+    :visited {
+      color: white;
+      }
+    .header__tweet{
+      display: inline-block;
       font-size: 20px;
+    }
+    .header__mypage{
+      margin-right: 30px;
+      float: right;
+      
+    }
+    .fa-user{
+      display: inline-block;
+      font-size: 25px;
     }
   }
   }

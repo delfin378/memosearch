@@ -24,7 +24,7 @@
 - belongs_to : group
 - belongs_to : user
 
-## memosテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |image|text|null: false|
