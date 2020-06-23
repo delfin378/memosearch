@@ -1,0 +1,37 @@
+.head
+  .header
+    = link_to messages_path do
+      .header__username
+        = current_user.name
+        .header__logout
+          %i.fa.fa-cog
+    .header__mainform
+      .header__contents
+        .header__mypage
+          - if user_signed_in?
+            = link_to destroy_user_session_path, method: :delete do
+              %i.fa.fa-user
+          - else
+            = link_to new_user_session_path, method: :get do
+              %i.fa.fa-user
+  .message-page
+    = form_for @message do |f|
+      .message-page__form
+        .message-page__form__formpage
+          投稿する
+        .message-page__form__title
+          タイトル名
+          %p
+            = f.text_field :title, class: 'title-form', placeholder: 'タイトルを入力してください'
+        .message-page__form__image
+          画像
+          %p
+            =f.fields_for :images do |i|
+              =i.file_field :src, class: "hidden-field"
+        .message-page__form__content
+          テキスト
+          %p
+            = f.text_field :content, class: 'content-form', placeholder: 'テキストを入力してください'
+        .decideform
+          = f.submit "投稿する", class:'decide-btn'
+      

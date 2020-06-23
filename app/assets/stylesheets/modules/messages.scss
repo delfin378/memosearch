@@ -1,3 +1,24 @@
 * {
   box-sizing: border-box;
 }
+
+.wrapper{
+  background-color: lightcyan;
+  height: 1000px;
+}
+
+.head{
+  background-color: lightcyan;
+  height: 1000px;
+}
+
+.main_contents{
+  display: inline-block;
+  height: 1000px;
+  width: 100%;
+  background-color: lightcyan;
+  &__form{
+  margin-top: 80px;
+  margin-left: 200px;
+  }
+}
