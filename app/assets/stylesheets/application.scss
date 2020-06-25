@@ -3,7 +3,10 @@
 
 
 //トップページ
-@import "modules/messages";
+@import "modules/toppage";
+
+//新規投稿
+@import "message/newmessage";
 
 
 @import "modules/user";
@@ -20,5 +23,7 @@
 //フラッシュMSG
 @import "modules/flash";
 
-//新規投稿
-@import "newmessage";
+
+
+//詳細画面
+@import "modules/show";

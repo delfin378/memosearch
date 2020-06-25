@@ -1,4 +1,5 @@
 class MessagesController < ApplicationController
+  before_action :set_message, except: [:index, :new, :create]
 
 
   def index
@@ -21,6 +22,11 @@ class MessagesController < ApplicationController
   end
 
   def edit
+    if @message.update(message_params)
+      redirect_to root_path
+    else
+      render :edit
+    end
   end
 
   def update
@@ -33,6 +39,10 @@ class MessagesController < ApplicationController
 
   def message_params
     params.require(:message).permit(:title, :content, images_attributes: [:src]).merge(user_id: current_user.id)
+  end
+
+  def set_message
+    @message = Message.find(params[:id])
   end
 
   
