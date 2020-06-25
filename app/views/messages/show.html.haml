@@ -1,0 +1,14 @@
+.wrapper
+  = render "shared/header"
+  %p
+  = render "shared/side_bar"
+  %p
+  .showform
+    .showform__form
+      = form_for @message do |f|
+        .showform__image
+          = image_tag (@message.images[0].src.url),class:"msgimage"
+        .showform__title
+          = @message.title
+        .showform__contents
+          = @message.content
