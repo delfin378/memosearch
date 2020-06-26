@@ -1,7 +1,7 @@
 .wrapper
   = render "shared/header"
   %p
-  = render "shared/side_bar"
+  = render "shared/left_side_bar"
   %p
   .showform
     .showform__form
@@ -12,3 +12,5 @@
           = @message.title
         .showform__contents
           = @message.content
+        .right_contents
+          = render "shared/edit_side_bar"

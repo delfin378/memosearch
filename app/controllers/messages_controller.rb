@@ -22,17 +22,19 @@ class MessagesController < ApplicationController
   end
 
   def edit
+  end
+
+  def update
     if @message.update(message_params)
-      redirect_to root_path
+      render :show
     else
       render :edit
     end
   end
 
-  def update
-  end
-
   def destroy
+    @message.destroy
+    redirect_to root_path, notice: '削除しました'
   end
 
   private
