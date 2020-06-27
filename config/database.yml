@@ -48,6 +48,8 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
+
+  
   <<: *default
   database: memosearch_production
   username: memosearch
