@@ -1,0 +1,8 @@
+.category
+  CATEGORIES
+  = link_to edit_message_path do
+    .category__form
+      編集
+  = link_to message_path(@message.id), method: :delete do
+    .category__form
+      削除
