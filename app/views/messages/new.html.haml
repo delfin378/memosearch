@@ -25,9 +25,10 @@
             = f.text_field :title, class: 'title-form', placeholder: 'タイトルを入力してください'
         .message-page__form__image
           画像
-          %p
-            =f.fields_for :images do |i|
-              =i.file_field :src, class: "hidden-field"
+          .message-page__form__image__mask
+            %label{class: "input-box"}
+              =f.fields_for :images do |i|
+                =i.file_field :src, class: "input-box__image"
         .message-page__form__content
           テキスト
           %p
