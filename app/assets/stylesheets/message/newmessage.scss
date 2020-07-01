@@ -1,9 +1,9 @@
 .message-page{
     width: 72%;
-    height: 95%;
+    height: 100%;
     margin: 0 auto;
     position: relative;
-    padding-top: 110px;
+    padding-top: 100px;
   &__form{
       background-color: white;
       box-shadow: 0 8px 17px 0 rgba(0, 0, 0, .4);
@@ -29,6 +29,26 @@
       padding-top: 40px;
       padding-left: 100px;
       font-size: 20px;
+      width: 72%;
+      &__mask{
+        margin-top: 10px;
+        border: 1px dashed #ccc;
+        position: absolute;
+        background: #f5f5f5;
+        width: 70%;
+        height: 100px;
+        cursor: pointer;
+      }
+      .input-box{
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        cursor: pointer;
+        &__image{
+          display: none;
+        }
+      }
+      
     }
     &__content{
       padding-top: 40px;
@@ -36,7 +56,7 @@
       font-size: 20px;
     }
     .content-form{
-      margin-top: 10px;
+      margin-top: 70px;
       font-size: 20px;
       width: 80%;
       margin-bottom: 50px;
@@ -44,9 +64,16 @@
       padding-bottom: 165px;
     }
     .decideform{
+      width: 20%;
       margin: 0 auto;
-      padding-bottom: 55px;
-      padding-left: 100px;
+      padding-bottom: 60px;
+      .decide-btn{
+        margin: 0 auto;
+        width: 130px;
+        height: 50px;
+        background-color: rgb(243, 22, 22);
+        color: white;
+      }
     }
   }
 }
