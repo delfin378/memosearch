@@ -15,28 +15,28 @@
 https://memosearch.herokuapp.com/
 
 ### テストアカウント
-アドレス：aaa@aaa
-ID：12345678a
+- アドレス：aaa@aaa
+- ID：12345678a
 
 ## Basic認証
-ユーザー名：test
-パスワード：2222
+- ユーザー名:test
+- パスワード:2222
 ## DEMO
 ![トップページ](https://github.com/delfin378/memosearch/blob/master/%E3%83%88%E3%83%83%E3%83%95%E3%82%9A%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99.png)
 
 ![投稿ページ](https://github.com/delfin378/memosearch/blob/master/%E6%8A%95%E7%A8%BF%E3%83%98%E3%82%9A%E3%83%BC%E3%82%B7%E3%82%99.png)
 
 ## 今後実装したい機能
-・検索機能
-・マイページ機能
+- 検索機能
+- マイページ機能
 
 ## 使用技術(開発環境)
-Ruby 2.5.1
-Ruby on Rails 2.5.3
-MySQL
-Github
-Heroku
-Visual Studio Code
+- Ruby 2.5.1
+- Ruby on Rails 2.5.3
+- MySQL
+- Github
+- Heroku
+- Visual Studio Code
 
 
 ## usersテーブル
