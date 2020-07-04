@@ -57,29 +57,33 @@
     }
   }   
   .header__contents{
-    width: 8%;
     height: 30px;
     margin: 16px 0 0 auto;
-    width: 200px;
+    width: 300px;
+    display: inline-block;
+    color: #fff;
     :link { 
-      color:white;
+      color:#fff;
     }
     :visited {
-      color: white;
+      color: #fff;
       }
     .header__tweet{
-      display: inline-block;
+      padding-left: 30px;
+      float: left;
       font-size: 20px;
     }
-    .header__mypage{
-      margin-right: 30px;
-      float: right;
-      
-    }
-    .fa-user{
-      display: inline-block;
-      font-size: 25px;
-    }
+  }
+  .header__mypage{
+    float: right;
+    padding-top: 16px;
+    padding-right: 35px;
+    color: #fff;
+  }
+  .fa-user{
+    float: right;
+    font-size: 30px;
+    color: #fff;
   }
   }
 }
