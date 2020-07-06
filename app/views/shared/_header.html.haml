@@ -9,17 +9,14 @@
       %input.textform{name: "keyword", type: "text", value: ""}
       %i.fas.fa-search.search_icon
     .header__contents
-      = link_to new_group_path do
-        .header__tweet
-          グループ作成
       = link_to new_message_path do
         .header__tweet
           投稿する
-    .header__mypage
-      - if user_signed_in?
-        = link_to destroy_user_session_path, method: :delete do
-          %i.fa.fa-user
-      - else
-        = link_to new_user_session_path, method: :get do
-          %i.fa.fa-user
+      .header__mypage
+        - if user_signed_in?
+          = link_to destroy_user_session_path, method: :delete do
+            %i.fa.fa-user
+        - else
+          = link_to new_user_session_path, method: :get do
+            %i.fa.fa-user
         
