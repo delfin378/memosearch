@@ -7,9 +7,14 @@
     .showform__form
       = form_for @message do |f|
         .showform__image
-          = image_tag (@message.images[0].src.url),class:"msgimage"
+          - if @message.images[0].present?
+            = image_tag (@message.images[0].src.url),class:"msgimage"
+          - else
+        
         .showform__title
           = @message.title
+          .showform__day
+            = @message.created_at.strftime("%Y-%m-%d %H:%M")
         .showform__contents
           = @message.content
         .right_contents

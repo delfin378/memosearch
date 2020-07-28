@@ -12,5 +12,16 @@
     width: 200px;
     height: 200px;
     }
+    .showform__title{
+      margin-top: 20px;
+      font-size: 30px;
+      margin-bottom: 20px;
+      .showform__day{
+        margin-left: 15px;
+        display: inline-block;
+        font-size: 15px;
+      }
+    }
+    
   }
 }
