@@ -15,7 +15,7 @@
 https://memosearch.herokuapp.com/
 
 ### テストアカウント
-- アドレス：aaa@aaa
+- アドレス：aaa@aaaa
 - ID：12345678a
 
 ## Basic認証
