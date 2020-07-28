@@ -37,6 +37,14 @@
       width: 140px;
 
     }
+    .no-form{
+      margin-top: 6px;
+      margin-left: 3px;
+      width: 150px;
+      height: 150px;
+      border:3px solid; 
+      border-color:black;
+    }
     .msgday{
       position: absolute;
       display: inline-block;
@@ -47,6 +55,13 @@
     .msg-title{
       padding-top: 5px;
       font-size: 24px;
+    }
+    .msgday2{
+      position: absolute;
+      display: inline-block;
+      font-size: 20px;
+      margin-left: 85px;
+      margin-top: 10px;
     }
   }
   }

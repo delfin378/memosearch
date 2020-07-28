@@ -1,11 +1,18 @@
 - @messages.each do |message|
   = link_to message_path(message.id) ,class:"msgform" do
     .content
-      - message.images.first(1).each do |image|
-        = image_tag image.src.url, class:"msgimage"
-        .msgday
-          = message.created_at.strftime("%Y-%m-%d %H:%M")
-          .msg-title #{message.title}
+      - if message.images.first(1).present?
+        - message.images.first(1).each do |image|
+          = image_tag image.src.url, class:"msgimage"
+          .msgday
+            = message.created_at.strftime("%Y-%m-%d %H:%M")
+            .msg-title #{message.title}
+      - else
+        .no-form
+          NOIMAGE
+          .msgday2
+            = message.created_at.strftime("%Y-%m-%d %H:%M")
+            .msg-title #{message.title}
     
     
     
